@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="sidebar-toggle">☰</button>
+        <div id="breadcrumbs">Home</div>
+        <div class="progress-bar-wrapper">
+            <div id="progress-bar"></div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside id="sidebar" class="sidebar">
+            <input type="text" id="search-box" placeholder="Search sections..." />
+            <ul id="tabs" class="tabs">
+                <!-- Dynamic tabs loaded here -->
+            </ul>
+            <ul id="search-results" class="search-results"></ul>
+        </aside>
+        <main id="content-area">
+            <div id="loading-spinner" class="spinner" style="display: none;">Loading...</div>
+            <div id="document-content">Welcome! Select a section to view content.</div>
+        </main>
+    </div>
+
+    <button id="back-to-top">↑ Back to Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
